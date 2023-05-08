@@ -1,0 +1,97 @@
+.side-container {
+  background-color: #13183f;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+  border-radius: 25px;
+
+  .horizontal-line {
+    width: 100%;
+    background-color: #414042;
+    height: 1px;
+    margin: 30px 0;
+  }
+
+  .platform-container {
+    font-family: "Nunito", sans-serif;
+    width: 80%;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .platform-heading {
+      color: #fff;
+    }
+
+    .platform-options {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 145px;
+    }
+
+    .platform-options p {
+      color: #fff;
+      padding: 10px;
+      margin: 5px;
+      cursor: pointer;
+
+      &:hover {
+        background: linear-gradient(95.44deg, #bf44dc 0%, #6538ea 100%);
+        border-radius: 8px;
+      }
+    }
+  }
+
+  .player-dashboard-container {
+    width: 80%;
+    background-color: #090b28;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #373396;
+    margin-top: 30px;
+
+    .dashboad-heading {
+      color: #fff;
+      font-family: "Nunito", sans-serif;
+    }
+
+    .players-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  .player-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .profile-image {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .player-name {
+      font-family: "Nunito", sans-serif;
+      color: #fff;
+      color: #d8d9ee;
+    }
+
+    .rank-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 50px;
+    }
+
+    .rank-box p {
+      color: #d8d9ee;
+    }
+  }
+}
