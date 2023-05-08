@@ -1,129 +1,130 @@
 .game-box {
-    width: 500px;
-    padding: 30px 0;
-    background-color: #090b28;
+  width: 32%;
+  padding: 30px 0;
+  background-color: #090b28;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #373396;
+  border-radius: 25px;
+
+  .game-heading {
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .interval-container {
+    background: linear-gradient(95.44deg, #bf44dc 0%, #6538ea 100%);
+    // background: linear-gradient(95.44deg, #e91fa8 0%, #2472fc 100%);
+    border-radius: 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    border: 1px solid #373396;
-    border-radius: 25px;
+    gap: 15px;
+    width: 80%;
+    height: 200px;
+    padding-bottom: 10px;
+    justify-content: space-evenly;
 
-    .game-heading {
-      font-family: "Nunito", sans-serif;
+    .interval-heading {
       text-align: center;
       color: #fff;
-      margin-bottom: 20px;
-      font-weight: 700;
-      font-size: 32px;
-      line-height: 44px;
+      font-size: 24px;
     }
 
-    .interval-container {
-      background: linear-gradient(95.44deg, #bf44dc 0%, #6538ea 100%);
-      border-radius: 12px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 15px;
+    .timer-wrapper {
       width: 80%;
-      height: 200px;
-      padding-bottom: 10px;
-      justify-content: space-evenly;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 10px;
 
-      .interval-heading {
-        text-align: center;
-        color: #fff;
-        font-size: 24px;
-      }
-
-      .timer-wrapper {
-        width: 80%;
+      .time-wrap {
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        color: #fff;
         gap: 10px;
 
-        .time-wrap {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          color: #fff;
-          gap: 10px;
-
-          .time-digit {
-            width: 70px;
-            height: 70px;
-            border-radius: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #090b28;
-            color: #fff;
-          }
-        }
-
-        .colon {
-          color: #fff;
-          font-weight: 600;
-          font-size: 22px;
-          align-self: flex-start;
+        .time-digit {
+          width: 70px;
+          height: 70px;
+          border-radius: 10px;
           display: flex;
           justify-content: center;
           align-items: center;
-          height: 60px;
-        }
-      }
-    }
-
-    .paying-box {
-      width: 80%;
-      height: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin: 20px;
-
-      .paying-action {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-
-        p {
-          color: #a09edf;
-        }
-
-        h2 {
+          background-color: #090b28;
           color: #fff;
         }
       }
 
-      .vertical-line {
-        width: 1px;
-        background-color: #373396;
-        height: 50px;
+      .colon {
+        color: #fff;
+        font-weight: 600;
+        font-size: 22px;
+        align-self: flex-start;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
       }
-
-      .payout {
-        align-items: flex-end;
-      }
-    }
-
-    .game-btn {
-      width: 80%;
-      background-color: #bf44dc;
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      outline: none;
-      border: none;
-      border-radius: 8px;
-      padding: 15px;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 20px;
-      cursor: pointer;
     }
   }
+
+  .paying-box {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+
+    .paying-action {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+
+      p {
+        color: #a09edf;
+      }
+
+      h2 {
+        color: #fff;
+      }
+    }
+
+    .vertical-line {
+      width: 1px;
+      background-color: #373396;
+      height: 50px;
+    }
+
+    .payout {
+      align-items: flex-end;
+    }
+  }
+
+  .game-btn {
+    width: 80%;
+    background-color: #bf44dc;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+  }
+}

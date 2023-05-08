@@ -1,0 +1,76 @@
+.header {
+  width: 100%;
+  background-color: #13183f;
+  padding: 20px 30px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .nav-bar {
+    width: 40%;
+    display: flex;
+    align-items: center;
+
+    .nav-option {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      position: relative;
+      top: 8px;
+
+      .nav-link a {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        color: #fff;
+        display: flex;
+        height: 35px;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        &:focus {
+          border-bottom: 1px solid #fff;
+        }
+      }
+    }
+  }
+
+  .profile-status {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 15%;
+
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .profile-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 70%;
+
+      .player-name {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 27px;
+        color: #d8d9ee;
+      }
+
+      .player-status {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: #a0a1c7;
+      }
+    }
+  }
+}

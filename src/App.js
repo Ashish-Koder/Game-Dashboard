@@ -1,20 +1,43 @@
 import React from "react";
 import SideBar from "./components/SideBar";
-import GameBox from "./components/GameBox";
+import Header from "./components/Header";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./styles/app.scss";
 import "./styles/sideBar.scss";
+import "./styles/header.scss";
+import "./styles/keySection.scss";
+import "./styles/liveChat.scss";
 import "./styles/gameBox.scss";
-import Header from "./components/Header";
+import Home from "./components/Home";
+import About from "./components/About";
+import Contact from "./components/Contact";
 
 const App = () => {
   return (
+    <Router>
     <main className="main">
       <section className="section">
-        <SideBar />
-        <GameBox />
-        <Header />
+
+
+        <div style={{ width: "16%" }}>
+        {/* side header */}
+          <SideBar />
+        </div>
+
+        <div style={{ width: "81%" }}>
+        {/* top header */}
+          <Header />
+
+            <Routes>
+              <Route path="/home" element = {<Home/>}/>
+              <Route path="why 99" element = {<About/>}/>
+              <Route path="about funr 99" element = {<Contact/>}/>
+            </Routes>
+        </div>
       </section>
     </main>
+    </Router>
+
   );
 };
 
