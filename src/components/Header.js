@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import "../../node_modules/font-awesome/css/font-awesome.min.css";
 import React from "react";
 
@@ -7,9 +7,37 @@ const Header = () => {
     <header className="header">
       <nav className="nav-bar">
         <ul className="nav-option">
-          <li className="nav-link"><Link to="/home">What is Peer 2 Peer Betting?</Link></li>
-          <li className="nav-link"><Link to="why 99">Why 99?</Link></li>
-          <li className="nav-link"><Link to= "about funr 99">About FUNR.99</Link></li>
+          <li className="nav-link">
+            <NavLink
+              to={"/home"}
+              style={({ isActive }) => ({
+                borderBottom: isActive ? "1px solid #fff" : "none",
+              })}
+            >
+              What is Peer 2 Peer Betting?
+            </NavLink>
+          </li>
+          <li className="nav-link">
+            <NavLink
+              to={"why 99"}
+              style={({ isActive }) => ({
+                borderBottom: isActive ? "1px solid #fff" : "none",
+              })}
+            >
+              Why 99?
+            </NavLink>
+          </li>
+          <li className="nav-link">
+            <NavLink
+              to={"about funr gg"}
+              style={({ isActive }) => ({
+                borderBottom: isActive ? "1px solid #fff" : "none",
+              })}
+            >
+              About FUNR.GG
+            </NavLink>
+          </li>
+          
         </ul>
       </nav>
       <div className="profile-status">

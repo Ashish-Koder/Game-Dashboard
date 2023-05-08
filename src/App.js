@@ -30,8 +30,8 @@ const App = () => {
 
             <Routes>
               <Route path="/home" element = {<Home/>}/>
-              <Route path="why 99" element = {<About/>}/>
-              <Route path="about funr 99" element = {<Contact/>}/>
+              <Route path="why 99" element = {<Contact/>}/>
+              <Route path="about funr gg" element = {<About/>}/>
             </Routes>
         </div>
       </section>

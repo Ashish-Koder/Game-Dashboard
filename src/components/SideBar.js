@@ -17,7 +17,7 @@ const SideBar = () => {
       <div className="platform-container">
         <h2 className="platform-heading">Choose your device</h2>
         <div className="platform-options">
-          <p className="active">IOS Device</p>
+          <p>IOS Device</p>
           <p>Android Device</p>
           <p>P.C.</p>
         </div>
