@@ -55,20 +55,65 @@
       justify-content: center;
       flex-wrap: wrap;
       gap: 10px;
-      .key {
+      // height: 480px;
+      overflow: hidden;
+
+      // .key {
+      //   width: 70px;
+      //   height: 70px;
+      //   border-radius: 10px;
+      //   background-color: #13183f;
+      //   display: flex;
+      //   justify-content: center;
+      //   align-items: center;
+      //   color: #fff;
+      //   font-family: "Gaegu";
+      //   font-style: normal;
+      //   font-weight: 400;
+      //   font-size: 30px;
+      //   line-height: 38px;
+      // }
+
+      .key-cap {
+        display: inline-block;
         width: 70px;
         height: 70px;
+        background: #13183f;
         border-radius: 10px;
-        background-color: #13183f;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #fff;
-        font-family: "Gaegu";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 30px;
-        line-height: 38px;
+        position: relative;
+        overflow: hidden;
+        padding: 12px;
+        box-shadow: 
+        inset -8px 0 8px rgba(0, 0, 0, 0.15),
+        inset 0 -8px 8px rgba(0, 0, 0, 0.25),
+        0 0 0 2px rgba(0, 0, 0, 0.75),
+        10px 20px 25px rgba(0, 0, 0, 0.4);
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 3px;
+          left: 4px;
+          bottom: 12px;
+          right: 10px;
+          background: linear-gradient(90deg, #13273f, #13183f);
+          border-left: 1px solid #13184f;
+          border-bottom: 1px solid #13194f;
+          border-top: 1px solid #13194d;
+          border-radius: 10px;
+          box-shadow: -10px -10px 10px rgba(255, 255, 255, 0.25),
+            10px 5px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        i {
+          position: relative;
+          z-index: 10;
+          color: #fff;
+          font-family: "Gaegu";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 30px;
+        }
       }
     }
   }

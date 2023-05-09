@@ -12,7 +12,16 @@ const Key = () => {
   useEffect(() => {
     randomAlphabet();
   }, []);
-  return <div className="key">{letter}</div>;
+
+  return (
+    // <div className="key">{letter}</div>
+
+    <div>
+      <span className="key-cap">
+        <i>{letter}</i>
+      </span>
+    </div>
+  );
 };
 
 export default Key;
