@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEllipsisVertical } from "@fortawesome/free-solid-svg-icons";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
-import Chat from "./Chat";
+import ReceiveChat from '../components/ReceiveChat'
+import SendChat from '../components/SendChat'
 
 const LiveChat = () => {
 
@@ -16,11 +17,12 @@ const LiveChat = () => {
         </div>
         <div className="chat-vertical-line"></div>
         <div className="chat-box">
-            <Chat/>
-            <Chat/>
-            <Chat/>
-            <Chat/>
-            <Chat/>
+            <ReceiveChat />
+            <SendChat />
+            <ReceiveChat />
+            <SendChat />
+            <ReceiveChat />
+            <SendChat />
         </div>
         <div className="send-box">
             <input type="text" placeholder="Type Here" value={chatMessage} onChange={(e) => setChatMessage(e.target.value)}/>

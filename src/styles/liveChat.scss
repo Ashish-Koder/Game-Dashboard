@@ -38,8 +38,8 @@
     .chat-box {
       height: 70%;
       width: 100%;
-    //   overflow: auto;
-    overflow: hidden;
+      overflow: auto;
+    // overflow: hidden;
 
       .player-chat {
         background: rgba(255, 255, 255, 0.03);
@@ -100,6 +100,10 @@
           border-bottom-left-radius: 20px;
           text-align: start;
         }
+      }
+
+      .sender{
+        flex-direction: row-reverse;
       }
     }
 
