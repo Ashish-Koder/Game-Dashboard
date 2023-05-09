@@ -17,12 +17,16 @@ const LiveChat = () => {
         </div>
         <div className="chat-vertical-line"></div>
         <div className="chat-box">
-            <ReceiveChat />
-            <SendChat />
-            <ReceiveChat />
-            <SendChat />
-            <ReceiveChat />
-            <SendChat />
+            <ReceiveChat message={`What is Peer 2 Peer Betting ?`} time={3}/>
+            <SendChat message={`Peer-to-peer or P2P betting is a form of betting that takes place between individuals without the need for a sportsbook or other
+intermediaries.`} time={3} />
+            <ReceiveChat message={`What is FUNR ?`} time={5}/>
+            <SendChat message={`FUNR us a publicly traded company. Stock symbol: FUNR`} time={6}/>
+            <ReceiveChat message={`What is a “Tournament Match” ?`} time = {6} />
+            <SendChat message={`Tournament Matches is what FUNR calls their live games. Tournament Matches 
+are much more than just games. They are Peer 2 Peer Betting Matches.`} time={7}/>
+            <ReceiveChat message={`Awesome !`} time={8}/>
+            <SendChat message={`Welcome... 🙂`} time={9}/>
         </div>
         <div className="send-box">
             <input type="text" placeholder="Type Here" value={chatMessage} onChange={(e) => setChatMessage(e.target.value)}/>
