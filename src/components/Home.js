@@ -21,9 +21,9 @@ const Home = () => {
 
       {/* Game container */}
       <div className="game-container">
-        <GameBox />
-        <GameBox />
-        <GameBox />
+        <GameBox startDate={"2023-05-11"}/>
+        <GameBox startDate={"2023-05-12 11:46:10"}/>
+        <GameBox startDate={"2023-05-13 14:27:15"}/>
       </div>
     </>
   );
