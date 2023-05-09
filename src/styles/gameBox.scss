@@ -6,34 +6,58 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  border: 2px solid #373396;
+  // border: 2px solid #373396;
   border-radius: 25px;
   position: relative;
   overflow: hidden;
+  z-index: 10;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -90px;
+    z-index: -2;
+    width: 40%;
+    height: 74vh;
+    transform-origin: center;
+    background: linear-gradient(to left, #00ff87, #133a94);
+    animation: rotate 4s linear infinite;
+  }
 
   &::before {
     content: "";
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.1);
-    width: 60px;
-    height: 120vh;
-    right: -70px;
-    top: -20px;
-    // transform-origin: center;
-    transform:skew(-30deg) rotate(35deg);
-    animation: slide 3s infinite linear;
+    inset: 3px;
+    z-index: -1;
+    background-color: #090b28;
+    border-radius: 25px;
   }
 
-  // &:hover::before{
-    
-  // }
-
-  @keyframes slide {
+  @keyframes rotate {
     100% {
-    right: 890px;
-    top: -400px;
+      transform: rotate(360deg);
     }
   }
+
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   background-color: rgba(255, 255, 255, 0.1);
+  //   width: 60px;
+  //   height: 120vh;
+  //   right: -70px;
+  //   top: -20px;
+  //   // transform-origin: center;
+  //   transform:skew(-30deg) rotate(35deg);
+  //   animation: slide 3s infinite linear;
+  // }
+
+  // @keyframes slide {
+  //   100% {
+  //   right: 890px;
+  //   top: -400px;
+  //   }
+  // }
 
   .game-heading {
     font-family: "Nunito", sans-serif;
@@ -47,7 +71,6 @@
 
   .interval-container {
     background: linear-gradient(95.44deg, #bf44dc 0%, #6538ea 100%);
-    // background: linear-gradient(95.44deg, #e91fa8 0%, #2472fc 100%);
     border-radius: 12px;
     display: flex;
     flex-direction: column;
@@ -57,6 +80,36 @@
     height: 200px;
     padding-bottom: 10px;
     justify-content: space-evenly;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    
+    &::after {
+      content: "";
+      position: absolute;
+      width: 30%;
+      height: 550px;
+      transform-origin: center;
+    background: linear-gradient(to left, #59d102, #f3f520);
+      z-index: -2;
+      animation: rotateReverse 3s linear infinite;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 3px;
+      border-radius: 12px;
+      z-index: -1;
+      background: linear-gradient(95.44deg, #bf44dc 0%, #6538ea 100%);
+    }
+
+
+    @keyframes rotateReverse {
+      100%{
+        transform: rotate(-360deg);
+      }
+    }
 
     .interval-heading {
       text-align: center;
