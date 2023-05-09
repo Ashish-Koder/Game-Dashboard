@@ -1,41 +1,19 @@
 import React from "react";
+import CountDown from "./CountDown";
 
-const GameBox = () => {
+const GameBox = ({startDate}) => {
   return (
-
     // game Box
     <div className="game-box">
       <h2 className="game-heading">Game Name</h2>
 
       {/* Interval background Container */}
       <div className="interval-container">
-
         {/* starting remain heading */}
         <p className="interval-heading">Coming Soon...</p>
 
         {/* timer container */}
-        <div className="timer-wrapper">
-
-          {/* Day timing */}
-          <div className="time-wrap">
-            <div className="time-digit">10</div>
-            <p className="time-unit">Days</p>
-          </div>
-          <p className="colon">:</p>
-
-          {/* Hours timing */}
-          <div className="time-wrap">
-            <div className="time-digit">10</div>
-            <p>Hours</p>
-          </div>
-          <p className="colon">:</p>
-
-          {/* Minutes timing */}
-          <div className="time-wrap">
-            <div className="time-digit">10</div>
-            <p>Mins</p>
-          </div>
-        </div>
+        <CountDown countDownTimeStamps={startDate}/>
       </div>
 
       <div className="paying-box">
